@@ -3,9 +3,6 @@
 /* 1025px, 1440px */
 /* 1441px, 1920px */
 /* 1921px */
-body {
-  background-color: #EEEFF7; }
-
 header {
   position: relative;
   background-color: #31353D; }
@@ -21,6 +18,28 @@ header {
     header .row ul li:link {
       color: #92CDCF;
       text-decoration: none; }
+
+body {
+  background-color: #EEEFF7; }
+  body .main {
+    padding-bottom: 2%; }
+    body .main .row {
+      border-left: thin solid #31353D;
+      padding-left: 2%;
+      border-right: thin solid #31353D;
+      padding-right: 2%; }
+  body .banner .bannerimg {
+    width: 100%; }
+  body .banner .nopad {
+    padding: 0%;
+    margin-top: 0%; }
+  body .row .contenttitle {
+    text-align: center; }
+  body .row .parawimg {
+    float: left; }
+  body .row .th {
+    border-radius: 50%;
+    overflow: hidden; }
 
 footer {
   background-color: #1C1D21; }

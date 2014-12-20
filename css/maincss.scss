@@ -37,8 +37,7 @@ $light-color: #92CDCF;
 $lightest-color: #EEEFF7;
 
 $padding-5s: 5% 5% 5% 5%;
-
-
+$glob-rad: 5% 10% 5% 2%;
 
 //Media Queries
 
@@ -57,9 +56,6 @@ $padding-5s: 5% 5% 5% 5%;
 @media #{$xxlarge-up} { }
 @media #{$xxlarge-only} { }
 
-body {
-  background-color: $lightest-color;
-}
 
 header {
 	.row {
@@ -84,6 +80,46 @@ header {
 	}
 	position: relative;
 	background-color: $dark-color;
+}
+
+body {
+	background-color: $lightest-color;
+
+	.main {
+		.row {
+			border-left: thin solid $dark-color;
+			padding-left: 2%;
+			border-right: thin solid $dark-color;
+			padding-right: 2%;
+		}
+		padding-bottom: 2%;
+	}
+
+	.banner {
+		.bannerimg {
+			width: 100%;
+		}
+
+		.nopad {
+			padding: 0%;
+			margin-top: 0%;
+		}
+	}
+
+	.row {
+		.contenttitle {
+			text-align: center;
+		}
+
+		.parawimg {
+			float: left;
+		}
+
+		.th {
+			border-radius: 50%;
+			overflow: hidden;
+		}
+	}
 }
 
 footer {
