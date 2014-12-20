@@ -1,0 +1,33 @@
+/* 0, 640px */
+/* 641px, 1024px */
+/* 1025px, 1440px */
+/* 1441px, 1920px */
+/* 1921px */
+body {
+  background-color: #EEEFF7; }
+
+header {
+  position: relative;
+  background-color: #31353D; }
+  header .row .logo {
+    padding: 5% 5% 5% 5%; }
+  header .row h1 {
+    color: #EEEFF7;
+    padding-top: 10%;
+    padding-left: 10%; }
+  header .row ul {
+    position: absolute;
+    padding-top: 20%; }
+    header .row ul li:link {
+      color: #92CDCF;
+      text-decoration: none; }
+
+footer {
+  background-color: #1C1D21; }
+  footer ul {
+    padding-top: 5%; }
+    footer ul li {
+      color: #92CDCF;
+      list-style: none; }
+
+/*# sourceMappingURL=maincss.css.map */
