@@ -65,8 +65,12 @@ header {
 
 		h1 {
 			color: $lightest-color;
-			padding-top: 10%;
-			padding-left: 10%;
+			
+			small {
+				padding-top: 0%;
+				margin-top: 0%;
+				margin-bottom: 0%;
+			}
 		}
 
 		ul {
@@ -87,10 +91,15 @@ body {
 
 	.main {
 		.row {
-			border-left: thin solid $dark-color;
+			//border-left: thin solid $dark-color;
 			padding-left: 2%;
-			border-right: thin solid $dark-color;
+			//border-right: thin solid $dark-color;
 			padding-right: 2%;
+
+			.girlimg {
+				padding-bottom: 5%;
+				margin-bottom: 5%;
+			}
 		}
 		padding-bottom: 2%;
 	}

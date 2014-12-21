@@ -9,9 +9,11 @@ header {
   header .row .logo {
     padding: 5% 5% 5% 5%; }
   header .row h1 {
-    color: #EEEFF7;
-    padding-top: 10%;
-    padding-left: 10%; }
+    color: #EEEFF7; }
+    header .row h1 small {
+      padding-top: 0%;
+      margin-top: 0%;
+      margin-bottom: 0%; }
   header .row ul {
     position: absolute;
     padding-top: 20%; }
@@ -24,10 +26,11 @@ body {
   body .main {
     padding-bottom: 2%; }
     body .main .row {
-      border-left: thin solid #31353D;
       padding-left: 2%;
-      border-right: thin solid #31353D;
       padding-right: 2%; }
+      body .main .row .girlimg {
+        padding-bottom: 5%;
+        margin-bottom: 5%; }
   body .banner .bannerimg {
     width: 100%; }
   body .banner .nopad {
