@@ -1,0 +1,128 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timeless Spa</title>
+    <link rel="stylesheet" href="../css/foundation.css" />
+    <link href="../css/foundation-icons.css" rel="stylesheet">
+    <link href="../css/maincss.css" rel="stylesheet">
+    <script src="../js/vendor/modernizr.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="jsscript.js"></script>
+  </head>
+  <body>
+
+    <header>
+      <nav class="top-bar" data-topbar role="navigation">
+        <ul class="title-area">
+          <li class="name">
+            <h1><a href="#">Timeless Spa | Admin | Settings</a></h1>
+          </li>
+           <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+          <li class="toggle-topbar menu-icon"></li>
+        </ul>
+
+        <section class="top-bar-section">
+          <!-- Right Nav Section -->
+          <ul class="right">
+            <li><a href="main.html">Blog Posts</a></li>
+            <li><a href="websitesettings.html">Website Settings</a></li>
+          </ul>
+        </section>
+      </nav>
+    </header>
+
+
+    <section class="main">
+      <div class="row">
+        <div class="large-12 medium-12 small-12 columns">
+          <h2 class="contenttitle">Content Management System</h2>
+          <hr>
+        </div>
+      </div>
+
+      
+      <div class="row">
+
+        <form method="post" id="newentry">
+          <fieldset>
+            <legend>Basic Website Settings</legend>
+
+            <div class="row">
+              <div class="large-12 columns">
+                <label>Title
+                  <input type="text" id="title" placeholder="My cool business" />
+                </label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="large-12 columns">
+                <label>Address
+                  <input type="text" id="address" placeholder="123 Fake St, Mars, Milky Way" />
+                </label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="large-12 columns">
+                <label>Phone
+                  <input type="text" id="phone" placeholder="(123) 456 - 7890" />
+                </label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="large-12 columns">
+                <label>Description
+                  <textarea id="other" rows=6 placeholder="We sell propane and propane accessories." /></textarea>
+                </label>
+              </div>
+            </div>
+
+
+
+            <div class="row">
+              <div class="large-12 columns">
+                <button id="submitbtn" type="submit">Submit</button>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+
+            <br>
+            <br>
+
+      </div>
+    </section>
+    
+    <footer>
+      <div class="row">
+        <div class="large-6 medium-6 small-12 columns">
+          <ul>
+            <li>Scott Gilmour</li>
+            <li>Simple Content Management System</li>
+          </ul>
+        </div>
+
+        <div class="large-6 medium-6 small-12 columns">
+          <ul>
+            <li><a href="http://www.scott-gilmour.com">http://www.scott-gilmour.com</a></li>
+            <li><a href="http://www.waterdown-computers.ca">http://www.waterdown-computers.ca</a></li>
+            
+          </ul>
+        </div>
+      </div>
+
+
+    </footer>
+    
+    
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>

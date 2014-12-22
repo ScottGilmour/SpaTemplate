@@ -14,17 +14,23 @@
   <body>
 
     <header>
-      <div class="row">
+      <nav class="top-bar" data-topbar role="navigation">
+        <ul class="title-area">
+          <li class="name">
+            <h1><a href="#">Timeless Spa | Admin</a></h1>
+          </li>
+           <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+          <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+        </ul>
 
-        <div class="large-2 medium-2 small-12 columns">
-          <a href="index.html"><img src="http://placehold.it/150x150" class="logo"></a>
-        </div>
-
-        <div class="large-4 medium-4 small-12 columns">
-          <h1>Timeless Spa <small>Admin </small></h1>
-        </div>
-
-      </div>
+        <section class="top-bar-section">
+          <!-- Right Nav Section -->
+          <ul class="right">
+            <li><a href="main.html">Blog Posts</a></li>
+            <li><a href="websitesettings.html">Website Settings</a></li>
+          </ul>
+        </section>
+      </nav>
     </header>
 
 
@@ -62,7 +68,7 @@
             <div class="row">
               <div class="large-12 columns">
                 <label>Content
-                  <textarea placeholder="New blog post" id="content" rows=6 /></textarea>
+                  <textarea placeholder="This is where you tell the world how important your life is." id="content" rows=6 /></textarea>
                 </label>
               </div>
             </div>
@@ -79,20 +85,22 @@
 
       <div class="row">
         <hr>
-        <table>
-          <thead>
-            <tr>
-              <th>ID</th>
-              <th >Title</th>
-              <th >SubTitle</th>
-              <th >Content</th>
-            </tr>
-          </thead>
-          <tbody id="tablebodyblogentries">
-           
-          </tbody>
-        </table>
-
+        <fieldset>
+          <legend>Past blog posts</legend>
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th >Title</th>
+                <th >SubTitle</th>
+                <th >Content</th>
+              </tr>
+            </thead>
+            <tbody id="tablebodyblogentries">
+             
+            </tbody>
+          </table>
+        </fieldset>
       </div>
     </section>
     
@@ -100,19 +108,15 @@
       <div class="row">
         <div class="large-6 medium-6 small-12 columns">
           <ul>
-            <li>Lorem ipsum dolor sit</li>
-            <li>Lorem ipsum dolor sit </li>
-            <li>Lorem ipsum dolor sit </li>
-            <li>Lorem ipsum dolor sit </li>
+            <li>Scott Gilmour</li>
+            <li>Simple Content Management System</li>
           </ul>
         </div>
 
         <div class="large-6 medium-6 small-12 columns">
           <ul>
-            <li>Lorem ipsum dolor sit</li>
-            <li>Lorem ipsum dolor sit</li>
-            <li>Lorem ipsum dolor sit</li>
-            <li>Lorem ipsum dolor sit</li>
+            <li><a href="http://www.scott-gilmour.com">http://www.scott-gilmour.com</a></li>
+            <li><a href="http://www.waterdown-computers.ca">http://www.waterdown-computers.ca</a></li>
           </ul>
         </div>
       </div>

@@ -1,16 +1,19 @@
 <?php
 	require_once 'medoo.php';
-	header("Content-type: text/javascript");
-
+	
 	$database = new medoo();
 
 	$datas = $database->select("BlogEntries", [
+		"id",
 		"title",
 		"subtitle",
 		"content"
-	],[
-		"id[<>]" => [0, 2]
+	], [
+
+		"ORDER" => 'id DESC',
+		"LIMIT" => 5
 	]);
+
 
 	echo json_encode($datas);
 ?>

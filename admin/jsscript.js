@@ -5,10 +5,18 @@ $(document).ready(function() {
 		$.getJSON('ajaxretrieve.php', function(data) {
             /* data will hold the php array as a javascript object */
             $.each(data, function(key, val) {
-                $('#tablebodyblogentries').append('<tr>' + '<td>'+key+'</td>' + '<td>'+val.title+'</td>' + '<td>'+val.subtitle+'</td>' + '<td>'+val.content+'</td>' + '</tr>');
+                $('#tablebodyblogentries').append(
+                	'<tr>' +
+                 		'<td>' + key + ' <a href="ajaxdelete.php?id=' + val.id + '"><i class="fi-trash size-16"></i></a></td>' +
+                  		'<td>'+val.title+'</td>' +
+                   		'<td>'+val.subtitle+'</td>' +
+                    	'<td>'+val.content+'</td>' +
+                  	'</tr>');
             });
         });
 	}
+
+
 
 	$("#submitbtn").click(function() {
 
